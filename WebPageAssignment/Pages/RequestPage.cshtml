@@ -1,0 +1,21 @@
+﻿@page
+@model WebPageAssignment.Pages.RequestPageModel
+@{
+    ViewData["Title"] = "Request Page";
+}
+
+<div>
+
+    <h4>Accept</h4>
+    <p>@Request.Headers["Accept"]</p>
+    <h4>Accept-Encoding</h4>
+    <p>@Request.Headers["Accept-Encoding"]</p>
+    <h4>User-Agent</h4>
+    <p>@Request.Headers["User-Agent"]</p>
+    <h4>Host</h4>
+    <p>@Request.Headers["Host"]</p>
+
+</div>
+
+
+

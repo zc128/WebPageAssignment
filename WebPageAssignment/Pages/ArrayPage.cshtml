@@ -1,0 +1,30 @@
+﻿@page
+@model WebPageAssignment.Pages.ArrayPageModel
+@{
+    ViewData["Title"] = "Array Page";
+
+    string[] Dinosaurs = new string[5];
+
+    Dinosaurs[0] = "Airakoraptor";
+    Dinosaurs[1] = "Bakesaurus";
+    Dinosaurs[2] = "Caenagnathasia";
+    Dinosaurs[3] = "Dachongosaurus";
+    Dinosaurs[4] = "Epidendrosaurus";
+
+}
+
+<body>
+    <style>
+        body {
+            background-color:darkseagreen
+        }
+    </style>
+
+    @for (int i = 0; i < Dinosaurs.Length; i++)
+    {
+        <ul>
+            <li>@Dinosaurs[i]</li>
+        </ul>
+    }
+
+</body>
